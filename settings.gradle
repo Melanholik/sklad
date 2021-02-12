@@ -1,2 +1,4 @@
 rootProject.name = 'sklad'
+include 'workWithExcel'
+include 'entities'
 

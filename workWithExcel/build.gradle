@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'by.customServiсе'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
