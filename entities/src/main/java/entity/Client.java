@@ -10,4 +10,10 @@ import lombok.NoArgsConstructor;
 public class Client {
     private int id;
     private String name;
+    private double number;
+
+    public Client(String name, double number) {
+        this.name = name;
+        this.number = number;
+    }
 }

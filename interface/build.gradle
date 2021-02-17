@@ -1,20 +1,29 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
 group 'by.customServiсе'
 version '1.0-SNAPSHOT'
-compileJava.options.encoding = 'UTF-8'
+
 
 repositories {
     mavenCentral()
 }
 
+javafx {
+    version = "15.0.1"
+    modules = [ 'javafx.controls' ]
+}
+
 dependencies {
-    implementation project('workWithExcel')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile group: 'org.openjfx', name: 'javafx-controls', version: '15.0.1'
     compileJava.options.encoding = 'UTF-8'
+    implementation project(':entities:')
+    implementation project(':workWithExcel:')
 }
 
 test {

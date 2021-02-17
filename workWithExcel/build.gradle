@@ -12,7 +12,7 @@ repositories {
 dependencies {
     compile group: 'org.apache.poi', name: 'poi', version: '5.0.0'
     compile group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
-
+    implementation project(':entities:')
 }
 
 test {
